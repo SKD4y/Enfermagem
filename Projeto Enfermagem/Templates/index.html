@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Enfermagem</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/query.css">
-
-    <style>
-
-    </style>
-</head>
-<body>
-    <main>
-        <h1>Formulário</h1>
-        <form action="#" method="post">
-            <label for="idnome">Nome: </label>
-            <input type="text" name="nome" id="idnome" required><br>
-            <label for="ididade">Idade:</label>
-            <input type="number" name="idade" id="ididade" required><br>
-            <label for="sexo">Sexo:</label>
-            <label for="idmasc">Masculino</label>
-            <input type="radio" name="sexo" id="idmasc" value="Masculino" required> <!--Deixei o value="Masculino" pois é esse valor que irá para o banco-->
-            <label for="idfem">Feminino</label>
-            <input type="radio" name="sexo" id="idfem" value="Feminino" required><br> <!--Deixei o value="Feminino" pois é esse valor que irá para o banco-->
-            <input id="button" type="submit" value="Enviar">
+  </head>
+  <body>
+    <!-- <h2 style="color: white; text-align: center">Enfermagem - UNAMA</h2>
+    <hr /> -->
+    <div class="container">
+      <div class="loginUser">
+        <br />
+        <h3 class="title">BEM-VINDO, ALUNO!</h3>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="user"></div>
+        <form action="" class="forms">
+          <div>
+            <input
+              class="usuario"
+              type="text"
+              name="user"
+              id="user"
+              maxlength="8"
+              placeholder="Matrícula"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              class="usuario"
+              type="password"
+              name="password"
+              id="password"
+              maxlength="4"
+              placeholder="Senha"
+              required
+            />
+          </div>
+          <br />
+          <br />
+          <div class="btn">
+            <button class="btnLogin">LOGIN</button>
+          </div>
         </form>
-    </main>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
